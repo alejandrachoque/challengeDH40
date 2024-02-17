@@ -1,10 +1,10 @@
 //express
 const express = require('express');
-const AspiranteRoute = express.Router();
+const router = express.Router();
 //direccion del controller
-const ApiAspiranteController = require('../controller/ApiAspiranteController');
+const ApiAspiranteControllerr = require('../controllers/ApiAspiranteController');
 //acceso
-//ej 
+router.get('/',ApiAspiranteControllerr.listAspirantes)
 
 
-module.exports= AspiranteRoute
+module.exports= router

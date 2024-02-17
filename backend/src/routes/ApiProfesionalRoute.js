@@ -1,10 +1,10 @@
 //express
 const express = require('express');
-const ProfesionalRoute = express.Router();
+const router = express.Router();
 //direccion del controller
-const ApiProfesionalController = require('../controller/ApiProfesionalController');
+const ApiProfesionalController = require('../controllers/ApiProfesionalController');
 //acceso
-//ej
+router.get('/',ApiProfesionalController.listProfesiones)
 
 
-module.exports= ProfesionalRoute;
+module.exports= router;
